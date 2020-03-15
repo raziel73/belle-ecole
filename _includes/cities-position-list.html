@@ -1,0 +1,12 @@
+<ul>
+    {% for city in site.pages %}
+        {% if city.region == include.region %}
+            <a href="{{site.baseurl}}{{city.url}}"
+            target="_blank"
+            class="ville"
+            style="top: {{ city.positionMapTop }}; left: {{ city.positionMapLeft }}">
+                {{city.number}}
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>

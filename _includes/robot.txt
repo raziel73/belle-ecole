@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: http://belle-ecole.jp/sitemap.xml

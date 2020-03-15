@@ -1,0 +1,13 @@
+<ul>
+    {% for city in site.pages %}
+        {% if city.region == include.region %}
+            <li>
+                <a href="{{site.baseurl}}{{city.url}}"
+                target="_blank"
+                class="bouton">
+                    <span>{{city.number}}</span>{{city.title}}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

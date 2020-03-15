@@ -1,0 +1,20 @@
+<nav>
+    <ul>
+        <li>
+            <a href="{{site.baseurl}}/" class="{% if page.url == '/index.html' %}current{% endif %}">ホーム</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/lessons/" class="{% if page.url contains 'lessons' %}current{% endif %}">レッスンコース</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/teachers/" class="{% if page.url contains 'teachers' %}current{% endif %}">講師の紹介</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/cities/" class="{% if page.url contains 'cities' %}current{% endif %}">留学</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">問い合わせ</a>
+        </li>
+    </ul>
+    <img id="nicolas" src="{{site.baseurl}}/img/nicolas.png" alt="">
+</nav>

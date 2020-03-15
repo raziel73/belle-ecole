@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<!-- Contenu -->
+<div id="classiccontent" class="cityPage">
+    {{content}}
+</div>
+
+<ul id="light-gallery" class="gallery">
+    {% for i in (1..{{page.nbOfImages}}) %}
+        <li data-src="{{site.baseurl}}/img/{{page.cityName}}/{{i}}.jpg">
+            <a href="#">
+                <img src="{{site.baseurl}}/img/{{page.cityName}}/{{i}}xs.jpg" alt="">
+            </a>
+        </li>
+    {% endfor %}
+</ul>

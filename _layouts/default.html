@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <meta name="description" content="{{page.description}}" />
+        <meta name="keywords" content="{{page.keywords}}" />
+
+        <meta property="og:url"                content="{{site.baseurl}}{{page.url}}" />
+        <!-- <meta property="og:type"          content="article" /> -->
+        <meta property="og:title"              content="{{page.title}}" />
+        <meta property="og:description"        content="{{page.description}}" />
+        <meta property="og:image"              content="{{site.baseurl}}/img/belleEcoleNetwork.png" />
+
+        <title>{% if page.title %}{{page.title}} - {% endif %}Belle Ecole フランス語教室 {% if page.titleAfter %} - {{page.titleAfter}}{% endif %}</title>
+
+        <link rel="icon" href="{{site.baseurl}}/img/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        {% if page.gallery %}<link rel="stylesheet"  href="{{site.baseurl}}/css/lightGallery.css"/>{% endif %}
+        <link href="{{site.baseurl}}/css/main.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="{{site.baseurl}}/js/jquery-1.11.2.min.js" /></script>
+        <script type="text/javascript" src="{{site.baseurl}}/js/scripts.js" /></script>
+    </head>
+
+    <body onkeydown="konami(event)">
+    <header>
+        <div id="menu">
+            {% include nav.html navclass='nav-top' %}
+            <div id="boutonMenu" onclick="toggleMenu()">
+                <span class="belleEcoleFont">Belle Ecole</span>
+                <br>神戸・三宮にあるフランス語教室
+            </div>
+        </div>
+        <div id="title">
+            <div>
+                <p>
+                    <img src="{{site.baseurl}}/img/pola1.png" alt="Belle Ecole - ベレコール">
+                    <span class="belleEcoleFont">Belle Ecole </span><br>
+                    <span class="traduction">ベレコール</span><br>
+                    神戸・三宮にあるフランス語教室-フランス留学
+                </p>
+                <div class="polalegende">フランス語教室 - フランス留学</div>
+                <a href="https://www.facebook.com/pages/%E3%83%99%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%AB/1634147580139746?sk=timeline"
+                target="_blank" class="facebook">
+                    <img src="{{site.baseurl}}/img/facebook.png" alt="Go to Facebook !" title="Go to Facebook !">
+                </a>
+            </div>
+        <div class="clear"></div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <img id="easterEgg" src="{{site.baseurl}}/img/cat.gif" alt="" onclick="endKonami()">
+    <div id="content">
+        {% if page.title == 'Home' %}
+            <h1>
+                <span class="belleEcoleFont">Bienvenue !</span>
+                神戸・三宮にあるベレコールフランス語教室に <br>
+                ようこそ！
+            </h1>
+        {% else %}
+            <h1>{{page.title}}</h1>
+        {% endif %}
+
+        {{content}}
+
+
+        <!-- contact -->
+        <div class="contact">
+            <p>
+                <span class="left">
+                    <a href="{{site.baseurl}}/contact/">お問い合わせ :  いつでもお尋ねください。</a>
+                </span>
+                <span class="right">
+                    <img src="{{site.baseurl}}/img/tel.png" alt="">
+                    <a href="tel:+818056477621">０８０　５６４７　７６２１</a>
+                </span>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <!-- /contact -->
+    </div>
+
+    <!-- nuages -->
+       <div id="nuages">
+       <img id="nuageG1" src="{{site.baseurl}}/img/nuageG1.png" alt="">
+       <img id="nuageD1" src="{{site.baseurl}}/img/nuageD1.png" alt="">
+       <img id="nuageG2" src="{{site.baseurl}}/img/nuageG2.png" alt="">
+       <img id="nuageD2" src="{{site.baseurl}}/img/nuageD2.png" alt="">
+   </div>
+   <!-- nuages -->
+
+    <footer>
+        {% include footer.html %}
+    </footer>
+
+    {% if page.gallery %}
+        <script src="{{site.baseurl}}/js/lightGallery.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+            $("#light-gallery").lightGallery();
+        });
+        </script>
+    {% endif %}
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65028458-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    </body>
+</html>
