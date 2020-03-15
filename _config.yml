@@ -1,0 +1,26 @@
+---
+title: Belle Ecole
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+promo1: 
+promo2: ただいま入会金 1̶0̶,̶0̶0̶0̶円　無料!
+promo3: "(2020年4月10日まで!)"
+privateLesson1: 40分レッスンは1回あたり 2,955円　（税別）
+privateLesson2: 50分レッスンは1回あたり 3,430円　（税別）
+privateLesson3: 60分レッスンは1回あたり 3,910円　（税別）
+regularLesson: 月に4回の場合 13,720円 （税別）
+groupLesson: 60分レッスン 月に4回で 一人 7820円 （税別）
+openHours: 日曜と祝日はお休みです。
+homeYoutubeLinkVideo: https://www.youtube.com/embed/kmZf1XNhFak
+homeYoutubeLinkChanel: https://www.youtube.com/channel/UCfZkJMYMsi0D-xiTHET_CXw?sub_confirmation=1&fbclid=IwAR3vOpaq37F_HDRwA3l5dY7aaQ02qnnaEwb4nTZMDpiYkGWFTgjBV1OYBZ8
+mardown: redcarpet
+baseurl: "/"
+exclude:
+- README.md
+permalink: pretty
