@@ -1,0 +1,1081 @@
+---
+---
+
+{% include_relative lightGallery.css %}
+
+/* -------------------------------------------------*/
+/* == Summary                                        */
+/* -------------------------------------------------*/
+
+/* 1- Mentions */
+/* 2- Style global */
+
+/*** 3- Ecran PC ***/
+/*    3.1- Menu Sup */
+/*    3.2- Title */
+/*    3.3- Content */
+/*    3.4- Footer */
+
+/*** 4- Ecran Mobile ***/
+/*    4.1- Menu Sup */
+/*    4.2- Title */
+
+
+/* -------------------------------------------------*/
+/*                   1- Mentions                     */
+/* -------------------------------------------------*/
+
+/* @autor : Damien Dupont */
+/* @date : février 2015 */
+/* @version : 1.0 */
+
+
+/* -------------------------------------------------*/
+/*                2- Style global                    */
+/* -------------------------------------------------*/
+
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 14px;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    background-color: #6ac0bd;
+}
+
+pre {
+    white-space: pre-wrap;
+} /* pour firefox et les <pre> */
+
+.table {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear:  both;
+}
+
+.belleEcoleFont {
+    font-family: 'Dancing Script', cursive;
+}
+
+.fontsize12 {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.fontsize18 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.hightlight {
+    color: #e26d73;
+}
+
+.textecenter {
+    text-align: center
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.rose {
+    color: #e0555c;
+}
+
+.barre {
+    text-decoration : line-through;
+}
+
+/* -------------------------------------------------*/
+/*                   3- Ecran PC                      */
+/* -------------------------------------------------*/
+
+/*                 3.1- Menu Sup                     */
+/* -------------------------------------------------*/
+header > #menu {
+    display: table-cell;
+    position: fixed;
+    z-index: 99;
+    top:  0px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-size: 1.8rem;
+    box-shadow: 0px 5px 12px rgba(119, 119, 119, 0.4);
+    background-color: #fbfbf2;
+}
+
+header nav {
+    margin: auto;
+}
+
+header nav > ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0 100px 0 0;
+}
+
+header nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    transition: all .5s;
+}
+
+header nav > ul > li:hover {
+    background-color: #efefef;
+}
+
+header nav > ul > li > a {
+    display: block;
+    padding: 25px 30px;
+    color: #6ac0bd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+header nav > ul > li > a:visited {
+    color: #6ac0bd;
+}
+
+header nav > ul > li:hover > a {
+    color: #4f8f8d;
+}
+
+header #nicolas {
+    position: absolute;
+    margin-left: -80px;
+    top: 0px;
+    width: 110px;
+}
+
+/*                   3.2- Title                      */
+/* -------------------------------------------------*/
+header > #title {
+    position: relative;
+    margin-top: 115px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header > #title > div > p {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header > #title > div > p > .belleEcoleFont {
+    color: #e26d73;
+    font-size: 100px;
+    font-size: 10rem;
+}
+
+header > #title > div > p > .traduction{
+    font-size: 65px;
+    font-size: 6.5rem;
+}
+
+header > #title > div > p > img {
+    float: left;
+}
+
+header > #title > div {
+    position: relative;
+    width: 900px;
+    margin: auto;
+}
+
+header > #title > div .polalegende {
+    position: absolute;
+    left:  33px;
+    top:  205px;
+    color: #4f8f8d;
+    font-weight: bold;
+}
+
+header > #title .facebook {
+    position: absolute;
+    top:  50px;
+    right: 15px;
+    cursor:  pointer;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+    -webkit-animation: mongolfiere 8s linear infinite;
+    animation: mongolfiere 8s linear infinite;
+}
+
+@-webkit-keyframes mongolfiere {
+    0% {-webkit-transform: rotate(7deg);}
+    50% {-webkit-transform: rotate(-7deg);}
+    100% {-webkit-transform: rotate(7deg);}
+}
+
+@keyframes mongolfiere {
+    0% {transform: rotate(7deg);}
+    50% {transform: rotate(-7deg);}
+    100% {transform: rotate(7deg);}
+}
+
+/*                 3.3- Content                     */
+/* -------------------------------------------------*/
+#content {
+    max-width: 920px;
+    margin: 30px auto;
+    background-color: #fbfbf2;
+}
+
+#content h1{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-size: 2.5rem;
+    color: #4f8f8d;
+    background-color: #f0f0f0;
+    border: 1px solid #e2e2e2;
+}
+
+#content h1 .belleEcoleFont {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-size: 4rem;
+}
+
+#content h2 {
+    padding: 10px 0px;
+    font-size: 18px;
+    font-size: 1.8em;
+    color: #e26d73;
+}
+
+/* -- info */
+#content .info {
+    display: table;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #e26d73;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+#content .info > img {
+    display: table-cell;
+    width: 92px;
+    vertical-align: middle;
+}
+
+#content .info > p {
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #e26d73;
+    font-weight: bold;
+}
+
+#content .info > p > .bouton:active {
+    border-top: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
+    border-bottom: none;
+    border-right: none;
+}
+
+
+
+/* -- Shortcuts */
+.shortcut {
+    display: table;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.shortcut a {
+    display: table-cell;
+    padding: 10px 0;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: #4f8f8d;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.shortcut a:visited {
+    color: #4f8f8d;
+}
+
+.shortcut a:hover {
+    border-radius: 20px;
+    background-color: #f6dad4;
+}
+
+.shortcut a .title {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #e0555c;
+}
+
+/* -- video */
+.firstVideo {
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.firstVideo iframe {
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+}
+
+@media (max-width: 901px) {
+    .firstVideo iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+#content .firstVideo a.bouton {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#content a.bouton i {
+    font-size: 30px;
+}
+
+
+/* -- Contenu courant */
+#classiccontent, #cours {
+    width: 90%;
+    margin: auto;
+    color: #4f8f8d;
+}
+
+#content a,
+#content a:visited {
+    color: #133534;
+}
+
+#content a.bouton {
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #6ac0bd;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+  }
+
+#classiccontent table {
+    width: 100%;
+    border: 5px solid #6ac0bd;
+}
+
+#classiccontent table+table {
+    margin-top: 10px;
+}
+
+#classiccontent td, #classiccontent th {
+    text-align: center;
+    border: 1px solid #e2e2e2;
+}
+
+#classiccontent.cityPage strong {
+    color: #e26d73;
+}
+
+#content ul {
+    list-style-image: url("{{site.baseurl}}/img/puce.png");
+    padding: 0 4px;
+}
+
+#content ul > li {
+    padding: 8px 0;
+}
+
+/* -- Cours */
+#cours .table {
+    width: 100%;
+}
+
+#cours .table-row {
+    width: 100%;
+}
+
+#cours .table-row.prix .table-cell {
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #e2e2e2;
+}
+
+#cours .table.galerie {
+    margin-top: 10px;
+}
+
+#cours .table.galerie .table-cell {
+    width: 20%;
+    text-align: center;
+}
+
+#cours .table.galerie .table-cell img {
+    width: 90%;
+    padding: 3px;
+    border: 1px solid #e2e2e2;
+}
+
+#cours .table-cell div ul {
+    margin-left: 2rem;
+}
+
+#cours .info {
+    background-color: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+
+#cours a:hover .info {
+    transition: all .5s ease;
+    background-color: #e2e2e2;
+    border-top: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+}
+
+/* -- prof */
+#classiccontent.prof img {
+    padding: 7px;
+    margin: 5px;
+    border: 2px solid #d0d0d0;
+}
+
+#classiccontent.prof img:nth-child(odd) {
+    float: right;
+}
+
+#classiccontent.prof img:nth-child(even) {
+    float: left;
+}
+
+#classiccontent.prof ul:nth-child(odd) {
+    margin-left: 20px;
+}
+
+#classiccontent.prof ul:nth-child(even) {
+    margin-left: 20px;
+}
+
+#classiccontent .photoProfs {
+    width: 318px;
+    margin: auto;
+}
+
+/* -- france */
+#classiccontent.france .carteParisMobile,
+#classiccontent.france .carteFranceMobile {
+    display: none;
+}
+
+#classiccontent.france .carteConteneur{
+    position: relative;
+    margin: auto;
+    width: 578px;
+    height: 418px;
+}
+
+#classiccontent.france .carteConteneur img {
+    width: 100%;
+    height: 418px;
+    border: 2px solid #d0d0d0;
+}
+
+#classiccontent.france .carteConteneur .ville {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100%;
+    border: 4px solid #e0555c;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    color: #e2e2e2;
+    background-color: #4f8f8d;
+    animation: pastille 2s linear infinite;
+    -webkit-animation: pastille 2s linear infinite;
+
+}
+
+#classiccontent.france .liensEcoles ul {
+    list-style: none;
+}
+
+#classiccontent.france ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#classiccontent.france ul.gauche {
+    margin-left: 20px;
+}
+
+#classiccontent.france .liensEcoles {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#classiccontent.france .liensEcoles .bouton {
+    display: block;
+}
+
+#classiccontent.france .liensEcoles .bouton span {
+    margin-right: 6px;
+    padding: 3px 7px;
+    border: 3px solid #e0555c;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #266563;
+    animation: pastille 2s linear infinite;
+    -webkit-animation: pastille 2s linear infinite;
+}
+
+
+@keyframes pastille {
+    0% { background-color: #4f8f8d;}
+    50% { background-color: #266563;}
+    100% { background-color: #4f8f8d;}
+}
+
+@-webkit-keyframes pastille {
+    0% { background-color: #4f8f8d;}
+    50% { background-color: #266563;}
+    100% { background-color: #4f8f8d;}
+}
+
+/*-- ecole */
+ul#light-gallery {
+    width: 98%;
+    padding: 1%;
+    list-style: none;
+}
+
+ul#light-gallery li {
+    display: inline-block;
+    width: 176px;
+}
+
+ul#light-gallery img {
+    width: 176px;
+    height: 117px;
+}
+
+/* -- contact */
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/* -- contact / footer */
+.contact {
+    width: 100%;
+    color: #133534;
+    font-size: 12px;
+    font-size: 1.2rem;
+    background-color: #b4dfde;
+}
+
+.contact a {
+    text-decoration: underline;
+    color: #133534;
+}
+
+.contact .left {
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.contact .right {
+    position: relative;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.contact .right img {
+    position: absolute;
+    left: -27px;
+    top:  8px;
+}
+
+/*                  3.4- Nuages                      */
+/* -------------------------------------------------*/
+#nuages {
+    width: 100%;
+    overflow: hidden;
+}
+
+#nuageG1, #nuageD1, #nuageG2, #nuageD2 {
+    position: absolute;
+    z-index: -1;
+}
+
+#nuageG1 {
+    top: 130px;
+    right: 100%;
+    -webkit-animation: nuageG1 60s linear infinite;
+    animation: nuageG1 60s linear infinite;
+}
+
+@-webkit-keyframes nuageG1 {
+    0% {right: 0%; top:130px; opacity: 0;}
+    2% {right: 0%; top:130px; opacity: 0;}
+    3% {right: 1%; top:130px; opacity: 1;}
+    100% {right: 100%; top:130px; opacity: 1;}
+}
+
+@keyframes nuageG1 {
+    0% {right: 0%; top:130px; opacity: 0;}
+    2% {right: 0%; top:130px; opacity: 0;}
+    3% {right: 1%; top:130px; opacity: 1;}
+    100% {right: 100%; top:130px; opacity: 1;}
+}
+
+#nuageD1 {
+    top: 350px;
+    right: 100%;
+    -webkit-animation: nuageD1 90s linear infinite;
+    animation: nuageD1 90s linear infinite;
+}
+
+@-webkit-keyframes nuageD1 {
+    0%   {right: 100%; top:330px; opacity: 0;}
+    1%   {right: 99%; top:330px; opacity: 1;}
+    99%   {right: 1%; top:330px; opacity: 1;}
+    100%   {right: 0%; top:330px; opacity: 0;}
+}
+
+@keyframes nuageD1 {
+    0%   {right: 100%; top:330px; opacity: 0;}
+    1%   {right: 99%; top:330px; opacity: 1;}
+    99%   {right: 1%; top:330px; opacity: 1;}
+    100%   {right: 0%; top:330px; opacity: 0;}
+}
+
+#nuageG2 {
+    top: 650px;
+    right: 100%;
+    -webkit-animation: nuageG2 150s linear infinite;
+    animation: nuageG2 150s linear infinite;
+}
+
+@-webkit-keyframes nuageG2 {
+    0%   {right: 0%; top:650px; opacity: 0}
+    2%   {right: 0%; top:650px; opacity: 0}
+    3%   {right: 1%; top:650px; opacity: 1}
+    100%   {right: 100%; top:650px;}
+}
+
+@keyframes nuageG2 {
+    0%   {right: 0%; top:650px; opacity: 0}
+    2%   {right: 0%; top:650px; opacity: 0}
+    3%   {right: 1%; top:650px; opacity: 1}
+    100%   {right: 100%; top:650px;}
+}
+
+#nuageD2 {
+    top: 1100px;
+    right: 100%;
+    -webkit-animation: nuageD2 100s linear infinite;
+    animation: nuageD2 100s linear infinite;
+}
+
+@-webkit-keyframes nuageD2 {
+    0%   {right: 100%; top:1100px; opacity: 0}
+    1%   {right: 100%; top:1100px; opacity: 1}
+    99%   {right: 1%; top:1100px; opacity: 1}
+    100%   {right: 0%; top:1100px; opacity: 0}
+}
+
+@keyframes nuageD2 {
+    0%   {right: 100%; top:1100px; opacity: 0}
+    1%   {right: 100%; top:1100px; opacity: 1}
+    99%   {right: 1%; top:1100px; opacity: 1}
+    100%   {right: 0%; top:1100px; opacity: 0}
+}
+
+/*                 3.5- Footer                     */
+/* -------------------------------------------------*/
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    background-color: #2b5819;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .paris {
+    position: absolute;
+    z-index: 1;
+    top:  -1px;
+    width: 100%;
+    height: 81px;
+    background: #6ac0bd url("{{site.baseurl}}/img/paris.png") no-repeat center center;
+}
+
+footer .content {
+    padding-top:  100px;
+}
+
+footer .content ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin:  0 20px;
+}
+
+footer a, footer a:visited {
+    color: #081901;
+}
+
+
+@media (min-width: 900px) {
+    #boutonMenu {
+        display: none;
+    }
+    header nav {
+        display: block;
+    }
+    #title {
+        display: block;
+    }
+    #nuages {
+        display: block;
+    }
+}
+
+/* -------------------------------------------------*/
+/*                 4- Ecran Mobiles                  */
+/* -------------------------------------------------*/
+
+
+/*                 4.1- Menu Sup                     */
+/* -------------------------------------------------*/
+
+@media (max-width: 900px) {
+   /*@media only screen and (max-device-width: 480px) and (max-width: 900px) {*/
+
+
+    #nicolas {
+        display: none;
+    }
+
+    #boutonMenu {
+        position: fixed;
+        z-index: 99;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 60px;
+        cursor:  pointer;
+        text-align: center;
+        color: #e26d73;
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        box-shadow: 0px 5px 12px rgba(119, 119, 119, 0.4);
+        background: #ffffff url("{{site.baseurl}}/img/menu.png") no-repeat right 11px;
+    }
+
+    #boutonMenu .belleEcoleFont {
+        color: #e26d73;
+        font-size: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    header nav {
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    header nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav > ul > li {
+        display: block;
+        border-radius: 0px;
+        padding: 0px;
+        border-bottom: 1px solid #9ae2e0;
+        background-color: #b9fffd;
+    }
+
+    header nav > ul > li > a, header nav > ul > li > a:visited {
+        color: #387270;
+    }
+
+    header nav > ul > li > a:hover {
+        background-color: #a3eae8;
+    }
+
+/*                   3.2- Title                      */
+/* -------------------------------------------------*/
+    #title {
+        display: none;
+    }
+
+/*                 3.3- Content                      */
+/* -------------------------------------------------*/
+    #content {
+        position: relative;
+        max-width: 95%;
+        margin: 70px auto;
+        background-color: #fbfbf2;
+    }
+
+    /* -- info */
+    #content .info {
+        display: table;
+        width: 95%;
+        margin: 10px auto;
+        padding: 5px 0;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #e2e2e2;
+        border-right: 1px solid #e2e2e2;
+        background: #f0f0f0 url("{{site.baseurl}}/img/cloche.png") no-repeat right center ;
+    }
+
+    #cours .info,
+    #classiccontent .info {
+        background-image: none;
+    }
+
+    #content .info > img {
+        display: none;
+    }
+
+    #content .info > p {
+        padding: 10px;
+        text-align: center;
+        color: #e26d73;
+        font-weight: bold;
+    }
+
+    /* -- Shortcuts */
+    #content .shortcut {
+        display: block;
+        margin: 50px 0;
+        width: 100%;
+        text-align: inherit;
+    }
+
+    #content .shortcut a {
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        vertical-align: top;
+        text-decoration: none;
+        color: #4f8f8d;
+        font-weight: bold;
+        transition: all .5s ease;
+    }
+
+    #content .shortcut a:visited {
+        color: #4f8f8d;
+    }
+
+    /* -- Contenu courant */
+    #classiccontent img {
+    float: inherit;
+    width: 100%;
+    }
+
+    /* -- Cours */
+    #cours .info {
+        background-color: #ffffff;
+        border-top: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
+    }
+
+    #cours .table.galerie {
+        width: 100%;
+    }
+
+    #cours .table-row, #cours .table.galerie .table-row {
+        display: block;
+        width: 100%;
+    }
+
+    #cours .table-cell {
+        display: table-row;
+        width: 100%;
+    }
+
+    #cours .table-row.prix .table-cell div{
+        border: 1px solid  #e2e2e2;
+    }
+
+    #cours .table-cell div {
+        padding: 1rem;
+    }
+
+    #cours .table.galerie, #cours .table.galerie .table-cell {
+        display: block;
+        width: 100%;
+    }
+
+    #cours .table.galerie .table-cell img {
+        width: 100%;
+    }
+
+    /* -- prof */
+    #classiccontent.prof img {
+        width: 90%;
+        box-sizing: content-box;
+        padding: 7px;
+        margin: 5px;
+        border: 2px solid #d0d0d0;
+    }
+
+    .prof ul.gauche, .prof ul.droite {
+        margin-left: 20px;
+    }
+
+    /* -- france */
+    #classiccontent.france .carteConteneur {
+        display: none;
+    }
+
+    #classiccontent.france .carteParisMobile,
+    #classiccontent.france .carteFranceMobile{
+        display: block;
+    }
+
+    #classiccontent.france .liensEcoles {
+        width: 100%;
+    }
+
+/*                  3.4- Nuages                      */
+/* -------------------------------------------------*/
+    #nuages {
+        display: none;
+    }
+
+/*                   4.5- Footer                     */
+/* -------------------------------------------------*/
+footer {
+    margin-top: 50px;
+}
+
+footer .content {
+    padding: 100px 5px 10px 5px;
+}
+
+    footer .content ul li{
+        margin: 0 5px;
+    }
+}
+
+footer #nicolas
+{
+    display: none;
+}
+
+/*               xx- easeter Egg                     */
+/* -------------------------------------------------*/
+#easterEgg {
+    visibility: hidden;
+    position: fixed;
+    top: 150px;
+    right: 90%;
+    z-index: 9999;
+    -webkit-animation: easterEgg 150s linear infinite;
+    animation: nuageG1 150s linear infinite;
+}
+
+@-webkit-keyframes easterEgg {
+    0%    {right: 90%; top:150px}
+    20%   {right: 70%; top:250px}
+    30%   {right: 40%; top:100px}
+    50%   {right: 30%; top:250px}
+    70%   {right: 60%; top:300px}
+    90%   {right: 70%; top:200px}
+    100%  {right: 90%; top:150px}
+}
+
+@keyframes easterEgg {
+    0%    {right: 90%; top:150px}
+    20%   {right: 70%; top:250px}
+    30%   {right: 40%; top:100px}
+    50%   {right: 30%; top:250px}
+    70%   {right: 60%; top:300px}
+    90%   {right: 70%; top:200px}
+    100%  {right: 90%; top:150px}
+}
