@@ -12,22 +12,14 @@ promo1: |-
   オンラインレッスンを始めました！！ただいまキャンペーン中！！
   ラインやスカイプでレッスンが可能です！！
   お気軽にお問い合わせください！！
-promo2: |-
-  ただいま入会金 1̶0̶,̶0̶0̶0̶円　無料!
-
-  お知らせ！
-  3月30日から4月9日まで学校をお休みさせていただきます。お問い合わせはメールのみとなりますので、ご了承くださいませ。
-promo3: "(2023年4月10日まで!)"
+promo2: ただいま入会金 1̶0̶,̶0̶0̶0̶円　無料!
+promo3: "(2023年5月10日まで!)"
 privateLesson1: 40分レッスンは1回あたり 3,400円　（税込）
 privateLesson2: 50分レッスンは1回あたり 3,925円　（税込）
 privateLesson3: 60分レッスンは1回あたり 4,450円　（税込）
 regularLesson: 月に60分4回の場合 15,700円 （税込）
 groupLesson: 60分レッスン 月に4回で 一人  8,900円（税込）
-openHours: |-
-  日曜と祝日はお休みです。
-
-  お知らせ！
-  3月30日から4月9日まで学校をお休みさせていただきます。お問い合わせはメールのみとなりますので、ご了承くださいませ。
+openHours: 日曜と祝日はお休みです。
 homeYoutubeLinkVideo: https://www.youtube.com/embed/kmZf1XNhFak
 homeYoutubeLinkChanel: https://www.youtube.com/channel/UCfZkJMYMsi0D-xiTHET_CXw?sub_confirmation=1&fbclid=IwAR3vOpaq37F_HDRwA3l5dY7aaQ02qnnaEwb4nTZMDpiYkGWFTgjBV1OYBZ8
 mardown: redcarpet
